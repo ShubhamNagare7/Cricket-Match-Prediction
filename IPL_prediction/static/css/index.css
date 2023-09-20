@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav-bg {
+    background: rgba(4, 4, 4, 0.44);
+    padding: 0.5em 0;
+}
+
+.navbar-nav>li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.active:hover {
+    background-color: #b9b9ba;
+    transition: 0.2s;
+}
+
+.btn-click1 {
+    position: relative;
+    top: 600px;
+    left: 200px;
+}
+
+.btn-click2 {
+    position: relative;
+    top: 600px;
+    left: 250px;
+}
+
+.area1 {
+    padding: 4em;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info_head {
+    margin-bottom: 4em;
+}
+
+.info {
+    font-size: 3em;
+    color: #262c38;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+}
+
+.info span {
+    color: #545151;
+    font-weight: 200;
+}
+
+.info:after {
+    border-top: 2px solid #ffcc54;
+    display: block;
+    width: 81px;
+    content: "";
+    margin: 8px auto 0;
+}
+
+.info_head p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+    color: #5e5e5e;
+    line-height: 1.8em;
+}
+
+.col {
+    display: table-cell;
+}
+
+.p1 {
+    background: #633e6e;
+}
+
+.info1 {
+    display: block;
+}
+
+p.para {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0;
+}
+
+.area-right {
+    padding: 2em;
+}
+
+.area-right h5 {
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+h5 {
+    margin: 0;
+    font-family: 'Khula', sans-serif;
+    font-weight: 700;
+}
+
+.p2 {
+    background: #f76872;
+}
+
+.area2 {
+    background-image: url(../bg2.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5em 0;
+    text-align: center;
+}
+
+.area2 h3 {
+    font-size: 34px;
+    color: rgb(250, 250, 250);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Khula', sans-serif;
+}
+
+.area2 p {
+    color: #ffffff;
+    text-align: center;
+    line-height: 28px;
+    width: 50%;
+    margin: 30px auto;
+    font-size: 17px;
+    padding: 20px 0;
+    border-top: 1px solid #8d8d8d;
+}
+
+.iplButton a {
+    background: #ffcc54;
+    color: #fff;
+    display: inline-block;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1em;
+    border: 2px solid transparent;
+}

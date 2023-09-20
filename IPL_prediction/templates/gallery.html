@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/gallery.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>About Us</title>
+    <style>
+        #d1 {
+            background-color: rgb(227, 226, 247);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand mb-0 h1" style="color: white;" href="/"><img src="./static/ipl-logo.PNG" alt=""
+                        width="30" height="24" class="d-inline-block align-text-top">IPL Predictor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page"
+                                href="{{url_for('about')}}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page"
+                                href="{{url_for('gallery')}}">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page"
+                                href="{{url_for('contact')}}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="gal">
+            <div class="head-section">
+                <h3 class="gal-head">Our <span>Gallery</span></h3>
+                <p>
+                    Here are some of the moments captured of the most anticipated cricket festival of the year, i.e, the
+                    Indian Premier League.
+                </p>
+                <div class="photos">
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/1.jpg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/2.jpg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/4.jpg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/3.webp" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/3.webp" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/5.jpg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/6.gif" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/6.gif" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/7.jpeg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/7.jpeg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/8.jpeg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/8.jpeg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/9.webp" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/9.webp" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/10.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/10.jpg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/11.jpeg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/11.jpeg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/12.webp" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/12.webp" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/13.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/13.jpg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/14.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/14.jpg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/16.jpeg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/16.jpeg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/15.jpeg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/15.jpeg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/17.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/17.jpg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/20.jpeg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/20.jpeg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/19.jpeg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/19.jpeg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <div class="col-md-3 gallery-grids">
+                        <a href="/static/image/18.jpeg" class="gallery-box" data-lightbox="example-set" data-title="">
+                            <img src="/static/image/18.jpeg" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center text-white">
+            <!-- Grid container -->
+            <div class="container">
+                <!-- Section: Social media -->
+                <section>
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark" href="https://www.facebook.com/" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-facebook"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark" href="https://twitter.com/" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark"
+                        href="https://www.instagram.com/accounts/login/?hl=en" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark"
+                        href="https://www.linkedin.com/checkpoint/lg/sign-in-another-account" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark" href="https://github.com/login" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+                </section>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-dark">
+                © 2022 IPL Predictor. All Rights Reserved
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

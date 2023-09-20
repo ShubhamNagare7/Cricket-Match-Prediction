@@ -1,0 +1,50 @@
+<head>
+  <title>IPL Winner Predictor</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.ico') }}">
+
+  <script src="https://kit.fontawesome.com/f13b0bc903.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-image: url("./static/bg8.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h1 {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1> IPL Winner Predictor 🏆</h1>
+
+  <!-- Result -->
+  <div class="register">
+    <center>
+      <p style="font-size:30px;">The Predicted Winner Is:<br><br> {{ team_name }}</p><br>
+    </center>
+
+  </div>
+  <br><br><br>
+
+  <center>
+    <carousel>
+      <img src="{{ url_for('static', filename= 'mi1.jpg') }}">
+      <img src="{{ url_for('static', filename= 'srh1.png') }}">
+      <img src="{{ url_for('static', filename= 'rcb1.png') }}">
+      <img src="{{ url_for('static', filename= 'dc1.png') }}">
+      <img src="{{ url_for('static', filename= 'rr1.png') }}">
+      <img src="{{ url_for('static', filename= 'kkr1.jpg') }}">
+      <img src="{{ url_for('static', filename= 'kxip1.png') }}">
+      <img src="{{ url_for('static', filename= 'csk1.png') }}">
+    </carousel>
+
+  </center>
+
+  <a href="{{url_for('back')}}"><button style="background-color: blue; margin-left: 1400px; margin-top: 100px;"
+      type="submit" class="myButton">Home</button></a>
+</body>
+
+</html>

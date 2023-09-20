@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IPL Score Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.ico') }}">
+
+    <script src="https://kit.fontawesome.com/f13b0bc903.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("./static/bg8.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: white;">IPL Winner Prediction 🏆</h1>
+
+    <div class="register">
+        <form id="register" action="{{ url_for('predict2') }}" method="post">
+
+            <label> Team 1: </label><br>
+            <select name="team1" style="font-size:10pt;">
+                <option value="none">--- Select team1 ---</option>
+                <option value="Mumbai Indians">Mumbai Indians</option>
+                <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                <option value="Chennai Super Kings">Chennai Super Kings</option>
+                <option value="Rajasthan Royals">Rajasthan Royals</option>
+                <option value="Kings XI Punjab">Kings XI Punjab</option>
+                <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                <option value="Delhi Daredevils">Delhi Daredevils</option>
+                <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            </select><br><br>
+            <label> Team 2: </label><br>
+            <select name="team2" style="font-size:10pt;">
+                <option value="none">--- Select team2 ---</option>
+                <option value="Mumbai Indians">Mumbai Indians</option>
+                <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                <option value="Chennai Super Kings">Chennai Super Kings</option>
+                <option value="Rajasthan Royals">Rajasthan Royals</option>
+                <option value="Kings XI Punjab">Kings XI Punjab</option>
+                <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                <option value="Delhi Daredevils">Delhi Daredevils</option>
+                <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            </select><br><br>
+            <label> Venue: </label><br>
+            <select name="venue" style="font-size:10pt;">
+                <option value="none">--- Select the Stadium ---</option>
+                <option value="Eden Gardens">Eden Gardens</option>
+                <option value="Feroz Shah Kotla">Feroz Shah Kotla</option>
+                <option value="M Chinnaswamy Stadium">M Chinnaswamy Stadium</option>
+                <option value="MA Chidambaram Stadium, Chepauk">MA Chidambaram Stadium</option>
+                <option value="Sawai Mansingh Stadium">Sawai Mansingh Stadium</option>
+                <option value="Punjab Cricket Association Stadium, Mohali">Punjab Cricket Association Stadium</option>
+                <option value="Rajiv Gandhi International Stadium, Uppal">Rajiv Gandhi International Stadium</option>
+                <option value="Wankhede Stadium">Wankhede Stadium</option>
+            </select><br><br>
+            <label> Toss Winner: </label><br>
+            <select name="toss_winner" style="font-size:10pt;">
+                <option value="none">--- Select toss winner ---</option>
+                <option value="Mumbai Indians">Mumbai Indians</option>
+                <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                <option value="Chennai Super Kings">Chennai Super Kings</option>
+                <option value="Rajasthan Royals">Rajasthan Royals</option>
+                <option value="Kings XI Punjab">Kings XI Punjab</option>
+                <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                <option value="Delhi Daredevils">Delhi Daredevils</option>
+                <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            </select><br><br>
+            <label> City: </label><br>
+            <select name="city" style="font-size:10pt;">
+                <option value="none">--- Select the City ---</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Mumbai">Mumbai</option>
+            </select><br><br>
+            <label> Toss Decision: </label><br>
+            <select name="toss_decision" style="font-size:10pt;">
+                <option value="none">--- Select Toss Result ---</option>
+                <option value="bat">Batting</option>
+                <option value="ball">Bowling</option>
+            </select><br><br>
+
+            <input type="submit" class="myButton" value="Predict Winner">
+        </form>
+        <a href="{{url_for('back')}}"><button style="margin-left: 100px; margin-top: 20px;" type="submit"
+                class="myButton">Back</button></a>
+    </div>
+
+</body>
+
+</html>
